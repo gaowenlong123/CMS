@@ -11,7 +11,7 @@ from CMSTestRepository.TestCase.post import post
 
 
 # 可以写成手动选的，通过gui，来选择要执行的脚本，当然可执行的脚本可以生成，都可以实现的
-def runnerCase():
+def MainRun():
     start_time = datetime.now()
     suite = unittest.TestSuite()
 
@@ -24,5 +24,5 @@ def runnerCase():
 
 
 if __name__ == '__main__':
-    runnerCase()
+    MainRun()
 

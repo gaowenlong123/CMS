@@ -4,10 +4,6 @@ import os
 from CMSTestServer.Supplement.Base_Yaml import getYaml
 from CMSTestServer.Base.Base_Log import myLog
 
-#将路径跳转到P文件夹中
-PATH = lambda p: os.path.abspath(
-    os.path.join(os.path.dirname(__file__), p)
-)
 
 
 def get_driver():

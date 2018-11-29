@@ -3,9 +3,10 @@ import os
 
 def change_path(path="../Yamls/test/test1.yaml"):
     ''' "../Yamls/test/Login.yaml"     根据当前路径获得新路径 '''
+
+    # 暂时不用
     back_num = len(path.split('/')[0])
     if back_num >3:
-        #暂时不用
         return back_three(path ,back_num)
 
 

@@ -3,7 +3,7 @@ from  selenium.webdriver.support.ui import WebDriverWait
 import selenium.common.exceptions
 
 class Element():
-    def __init__(self,wd):   #什么时候初始化
+    def __init__(self,wd):
         self.wd=wd
         self.object=None #等到object传递进来，操作完元素要把object为空
         self.is_object=False

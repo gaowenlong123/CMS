@@ -1,0 +1,69 @@
+testinfo:
+    - id: test001
+      title: 登录
+      info: 开始测用例之前需要登录=-=
+
+testcase:
+    - element_info: //*[@id="app"]/div/div/span[2]/a
+      find_type: xpath
+      operate_type: click
+      info: 点击登录
+
+    - element_info: None
+      find_type: None
+      operate_type: switch_window
+      info: 2 # 1、2切换窗口
+
+    - element_info: //*[@id="kr-shield-username"]
+      find_type: xpath
+      operate_type: send_keys
+      info: 23322332233
+
+    - element_info: //*[@id="kr-shield-password"]
+      find_type: xpath
+      operate_type: send_keys
+      info: er2222
+
+    - element_info: //*[@id="kr-shield-submit"]
+      find_type: xpath
+      operate_type: click
+      info: 点击登录
+
+    - element_info: None
+      find_type: None
+      operate_type: sleep
+      info: 3  #等待时间
+
+#    - element_info: None
+#      find_type: None
+#      operate_type: close_window   登录后会自动关闭窗口
+#      info: 0  #目标窗口
+
+    - element_info: None
+      find_type: None
+      operate_type: switch_window
+      info: 1 # 1、2切换窗口
+
+    - element_info: None
+      find_type: None
+      operate_type: refresh
+      info: 5 #刷新页面前等待一会
+
+#    - element_info: //*[@id="2$Menu"]/li[1]/a
+#      find_type: xpath
+#      operate_type: click
+#      info: 点击文章管理
+#
+#    - element_info: //*[@id="app"]/div/div[2]/div[2]/div/div[2]/div/div[1]/div[1]/div/a[1]/button
+#      find_type: xpath
+#      operate_type: click
+#      info: 添加按钮
+
+check:
+    - element_info: //*[@id="app"]/div/div[1]/div/div[1]/span/span[1]
+      find_type: xpath
+      operate_type: get_text
+      check:  DEFAULT_CHECK
+      info: 检查作者信息，验证登录成功
+
+

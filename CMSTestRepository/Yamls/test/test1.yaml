@@ -1,0 +1,44 @@
+#登录的滑动验证关掉
+
+# get_object     得到元素，必须再回去  , 得到对象有得到  父类对象 和 得到对象列表
+#get_driver
+
+testinfo:
+    - id: test005
+      title: 标题
+      info: 用例信息
+test:
+      id : 在一个字典里面，并且外面没有list
+      ed : 333
+      rd : 555
+testcase:
+    - element_info: 元素信息
+      find_type: 元素类型
+      operate_type: 操作
+      info: 操作信息
+      msg: 输入信息 ???
+    - element_info: 元素信息
+      find_type: 元素类型
+      operate_type:  操作
+      info: 操作信息
+    - element_info: 元素信息
+      find_type: 元素类型
+      operate_type: 操作
+      info: 操作信息
+    - element_info: 元素信息
+      find_type: 元素类型
+      operate_type:  操作
+      info: 操作信息
+    - element_info: 目标信息（也可以是None）
+      find_type: None
+      operate_type:  其他操作
+      info: 操作信息
+
+check:
+    - element_info: 检查的元素信息
+      find_type: 类型
+      operate_type: 操作
+      check: 检查类型   ???check_type
+      info: 检查的详细信息
+
+

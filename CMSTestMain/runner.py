@@ -13,6 +13,9 @@ from CMSTestRepository.TestCase.post import post
 # 可以写成手动选的，通过gui，来选择要执行的脚本，当然可执行的脚本可以生成，都可以实现的
 def MainRun():
     start_time = datetime.now()
+
+    #运行登录，记录Cookie
+
     suite = unittest.TestSuite()
 
     suite.addTest(ParametrizedTestCase.parametrize(post))

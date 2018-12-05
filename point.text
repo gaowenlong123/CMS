@@ -7,6 +7,8 @@
 
 4: 第二次循环  ，注意self。driver ok不？？
 
+5: unittest 还是有不方便的地方，不能随处self.driver  . 例如重新登录的方法，会直接跳过后面的内容
+
 
 
 Plan：

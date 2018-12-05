@@ -4,51 +4,6 @@ testinfo:
       info: 开始走发布文章的流程
 
 testcase:
-    - element_info: //*[@id="app"]/div/div/span[2]/a
-      find_type: xpath
-      operate_type: click
-      info: 点击登录
-
-    - element_info: None
-      find_type: None
-      operate_type: switch_window
-      info: 2 # 1、2切换窗口
-
-    - element_info: //*[@id="kr-shield-username"]
-      find_type: xpath
-      operate_type: send_keys
-      info: 23322332233
-
-    - element_info: //*[@id="kr-shield-password"]
-      find_type: xpath
-      operate_type: send_keys
-      info: er2222
-
-    - element_info: //*[@id="kr-shield-submit"]
-      find_type: xpath
-      operate_type: click
-      info: 点击登录
-
-    - element_info: None
-      find_type: None
-      operate_type: sleep
-      info: 3  #等待时间
-
-#    - element_info: None
-#      find_type: None
-#      operate_type: close_window   登录后会自动关闭窗口
-#      info: 0  #目标窗口
-
-    - element_info: None
-      find_type: None
-      operate_type: switch_window
-      info: 1 # 1、2切换窗口
-
-    - element_info: None
-      find_type: None
-      operate_type: refresh
-      info: 5 #刷新页面前等待一会
-
     - element_info: //*[@id="2$Menu"]/li[1]/a
       find_type: xpath
       operate_type: click
@@ -78,7 +33,7 @@ testcase:
     - element_info: None
       find_type: None
       operate_type: sleep
-      info: 300  #等待时间
+      info: 3  #等待时间
 
     - element_info: //*[@id="edui12_body"]/div
       find_type: xpath

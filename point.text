@@ -3,7 +3,9 @@
 
 2： 改动一下，将是否是对象，放进Element_by ？      Base_element
 
+3:要不要进行多个检查点的计算
 
+4: 第二次循环  ，注意self。driver ok不？？
 
 
 

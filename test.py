@@ -22,13 +22,13 @@
 #         b.append(i)
 # print(b)
 
-import sys
-sys.path.append("..")
-a=sys.path
-print(a)
-
-b=sys._getframe().f_code.co_name
-print(b)
+# import sys
+# sys.path.append("..")
+# a=sys.path
+# print(a)
+#
+# b=sys._getframe().f_code.co_name
+# print(b)
 
 # from Base.BaseYaml import  getYaml
 # import os
@@ -51,14 +51,54 @@ print(b)
 # w.current_window_handle
 # print(a)
 
-import os
-str=''
-count=0
-print(os.path.abspath(os.path.dirname(__file__)))
-a=os.path.dirname(__file__).split('/')
-print('aa',a)
+
+# import os
+# str=''
+# count=0
+# print(os.path.abspath(os.path.dirname(__file__)))
+# a=os.path.dirname(__file__).split('/')
+# print('aa',a)
+#
+#
+# path="../Yamls/test/test1.yaml"
+# back_num=len(path.split('/')[0])
+# print(back_num)
 
 
-path="../Yamls/test/test1.yaml"
-back_num=len(path.split('/')[0])
-print(back_num)
+
+from CMSTestServer.Supplement.Base_pickle import *
+from selenium import webdriver
+import time
+
+
+
+# 读本地缓存写入
+dict=read_pickle('Cookie.pickle')
+print(dict)
+w=webdriver.Chrome()
+w.get('http://cmstest02.36kr.com')
+#写入
+for i in dict:
+    cookie=dict[i]
+    print(cookie)
+    w.add_cookie(cookie)
+
+time.sleep(3)
+w.refresh()
+
+
+
+
+#  写入
+# w=webdriver.Chrome()
+# w.get('http://cmstest02.36kr.com')
+# input('dada')  #登录操作
+# a=w.get_cookies()
+# dict={}
+# count=0
+# for i in a:
+#     dict.update({str(count):i})
+#     count+=1
+# print(dict)
+#
+# writeInfo(dict , path='Cookie.pickle')

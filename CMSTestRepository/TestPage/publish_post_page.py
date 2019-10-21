@@ -6,7 +6,6 @@ class publish_post_page(Page_Objects):
         super(publish_post_page, self).__init__(param)
 
     def operate(self):
-        print("可以执行我，大哥")
         super().operate()
         pass
 
